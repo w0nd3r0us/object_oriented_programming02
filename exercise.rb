@@ -7,6 +7,10 @@ class BankAccount
     @balance = 0
   end
 
+  def balance
+    @balance
+  end
+
   def balance=(balance)
     @balance = balance
   end
@@ -43,3 +47,16 @@ class BankAccount
   end
 
 end
+
+
+
+p steven = BankAccount.create
+p kerry = BankAccount.create
+p steven.balance
+p kerry.balance
+p steven.deposit(500)
+p kerry.deposit(1000)
+p steven.balance
+p kerry.balance
+p steven.withdraw(139)
+p kerry.withdraw(379)
